@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        namespace = 'raman' // OpenShift namespace
+        namespace = 'team1' // OpenShift namespace
     }
 
     agent any
@@ -30,7 +30,7 @@ pipeline {
                     sh '''
                     oc login --token=sha256~pyXV_CWSm8k1mRMVqwr5VINx8TBDdxZmyzZPO0pLvH4 --server=https://api.natwest.priartw.com:6443 --insecure-skip-tls-verify
                     oc project ${namespace}
-                    oc start-build hello2
+                    oc start-build hellohema
                     '''
                 }
             }
