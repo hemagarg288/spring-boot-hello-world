@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    oc login --token=sha256~BT_vhfQI6T77KLRrNRhCBR6cGCejp5aj7fgh6xaAf3Y --server=https://api.natwest.priartw.com:6443 --insecure-skip-tls-verify
+                    oc login --token=sha256~v8Nohc1mAHMfJVHVoIyXLhxpydXstwOe4fgxUwt5j4I --server=https://api.natwest.priartw.com:6443 --insecure-skip-tls-verify
                     oc project ${namespace}
                     oc start-build hellohema
                     '''
